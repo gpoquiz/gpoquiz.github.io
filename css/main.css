@@ -3,7 +3,7 @@ body { margin: 60px auto; width: 70%; background-color: #333333;}
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
-p, ul { font-size: 1.5em; line-height: 1.4em; color: #FFF; }
+p, ul { font-size: 1.5em; line-height: 1.4em; }
 
 h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; color: #FFF}
 h1 { font-size: 3em;  }
