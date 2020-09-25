@@ -1,0 +1,11 @@
+---
+title: Environments
+---
+<h1>Projects</h1>
+
+<ul class="environments">
+  {% for env in site.environments %}
+    &raquo; <a href="{{ env.url }}" title="{{ env.title  }}">{{ env.title  }}</a><br>
+
+  {% endfor %}
+</ul>

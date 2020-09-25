@@ -1,3 +1,30 @@
 name: Grant Poquiz
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+
+collections:
+  environments:
+    output: true
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "environments"
+    values:
+      layout: "environment"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

@@ -1,0 +1,68 @@
+body { margin: 60px auto; width: 70%; background-color: #1C1C1C; color: #FFF;}
+
+a { text-decoration: none; color: #888;}
+a:hover { text-decoration: underline; color: green}
+
+p, ul { font-size: 1.5em; line-height: 1.4em;}
+
+h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif';}
+h1 { font-size: 3em;  }
+h2 { font-size: 2.7em; }
+h3 { font-size: 2.3em; }
+h4 { font-size: 1.9em; }
+
+nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif' ;
+	padding: 0px; list-style: none; font-weight: bold;}
+nav ul li, footer ul li { display: inline; margin-right: 20px; }
+
+footer { border-top: 1px solid #fff; font-size: .8em; }
+
+/* Blog */
+ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
+ul.posts li { list-style: none;}
+
+/* CV */
+.cv { margin: 0px 0px 60px; }
+.cv h1 { font-size: 3em; }
+.cv h2 { font-size: 2em; }
+.cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
+.cv address, .cv p { font-size: 1.2em; }
+.cv .download { float: right; font-size: .8em; text-transform: uppercase; }
+.cv table{width: 100%;font-size: 1.2em;}
+.current {
+  color: green;
+}
+
+.project img {width: 100%; height: auto; margin-left: auto; margin-right: auto; border: 1px solid white}
+.project img:hover {box-shadow: 0 0 4px 4px green;}
+.project table{style = font-size: 1em; width = 100%;}
+.project p { font-size: 1em; line-height: 1.4em; }
+.project td {vertical-align: top; text-align: left;}
+.project span {
+    position: relative;
+    font-size: 2.5em;
+    display: inline-block;
+    line-height: .7em;
+    vertical-align: middle;
+}
+
+.project span:before {
+    font-size: .25em;
+    display: block;
+    position absolute;
+    left: 0;
+    top: 0;
+    content: "N";
+    width: 22px;
+    text-align: center;
+}
+
+.project span:after {
+    font-size: .25em;
+    display: block;
+    position absolute;
+    left: 0;
+    bottom: 0;
+    content: "i = 0";
+    text-align: center;
+}
