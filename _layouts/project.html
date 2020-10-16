@@ -1,19 +1,21 @@
 ---
 layout: default
+
 ---
 <div class="project">
 <h1>{{ page.title }}</h1>
+	
 	<ul class="posts">
 							<div style = "float: left; width: 90%">
 							<p>{{content}}</p>
 							</div>
-							<div style = "float: right; width: 10%">
+							<div style = "float: right; width: 10%; height: 100%;">
 							
 							{% for image in site.static_files %}
-							{% if image.path contains page.project %}
-								<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
-								  <img src="{{ site.baseurl }}{{ image.path }}">
-								</a>
+								{% if image.path contains page.project %}
+									<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
+										<img src="{{ site.baseurl }}{{ image.path }}">
+									</a>
 								{% endif %}
 							{% endfor %}
 							</div>
