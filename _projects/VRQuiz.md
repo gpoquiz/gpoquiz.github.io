@@ -4,7 +4,7 @@ environment: unity
 title: Google VR Quiz Game
 type: Game Development/University
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BIJmYiCgFao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=Y6JbmzztWYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This project was a a group project done for my graduate degree.  We wanted to pick a project that would be interesting, but not taxing in terms of required man hours.  To start, we decided that a simple VR quiz game, where you look at the answers to select them, would be an easy enough introduction to Unity.  Our professor encouraged the class to make their project at least somewhat Covid-19 related, and so we tacked on a multiplayer component.  The intent was to mimic Kahoot stlye quizzes (essentially classroom competitive quizzes.)  Our professor also required more usage of the 3D space that the game occupied, which I will go into later.  
 
