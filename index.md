@@ -7,23 +7,25 @@ title: Main Page
     <header class="major">
         <h2> Learning New Skills, <br /> trying to break into the games industry. </h2>
     </header>
-    <p> Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in
-        adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo
-        blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate
-        lorem neque cubilia. </p>
+    <p> Welcome to my website! I am a Computer Science enthusiast with a Bachelor's and Master's degree from UTD. I have experience in diverse projects, including web development, cloud computing, game development, and mobile applications. Explore my work and journey in Computer Science. Thank you for visiting!
+ </p>
     <ul class="actions">
-        <li><a href="#" class="button">Learn More</a></li>
+        <li><a href="/elements" class="button">Learn More</a></li>
     </ul>
 </section>
 <!-- Two -->
-<section id="two">
+<section id="two"> 
     <h2>Recent Work</h2>
-
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
+    {{ collections.all | eleventyNavigation | eleventyNavigationToMarkdown  }}
+    {% assign navPages = collections.all | eleventyNavigation %}
+    {{ navPages | json }}
+    
     <div class="row">
         <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-            <h3>Magna sed consequat tempus</h3>
-            <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
+            <a href="/projects/unreal/automata"><img src="images/thumbs/projects/automata.png" alt="Multidimensional Cellular Automata" class="image fit thumb"/></a>
+            <h3>Multidimensional Cellular Automata</h3>
+            <p> Generalized Multidimensional Cellular Automata in Unreal Engine.</p>
         </article>
         <article class="col-6 col-12-xsmall work-item">
             <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
@@ -40,19 +42,9 @@ title: Main Page
             <h3>Quam neque phasellus</h3>
             <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
         </article>
-        <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-            <h3>Nunc enim commodo aliquet</h3>
-            <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-            <h3>Risus ornare lacinia</h3>
-            <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
-        </article>
     </div>
     <ul class="actions">
-        <li><a href="#" class="button">Full Portfolio</a></li>
+        <li><a href="/projects" class="button">Full Portfolio</a></li>
     </ul>
 </section>
 <!-- Three -->
