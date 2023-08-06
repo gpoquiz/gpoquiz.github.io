@@ -1,6 +1,7 @@
 ---
 layout: defaultlayout.njk
 title: Main Page
+background: /images/backgrounds/index_bg.png
 ---
 <!-- One -->
 <section id="one">
@@ -24,7 +25,7 @@ title: Main Page
         <article class="col-6 col-12-xsmall work-item">
             <h3>{{ data.title }}</h3>
             <a href="{{ data.page.url }}">
-                <img src="{{ data.page.url }}{{ data.eleventyNavigation.thumbnail }}" alt="{{ data.title }}" class="image fit thumbnail"/>
+                <img src="{{ data.eleventyNavigation.thumbnail }}" alt="{{ data.title }}" class="image fit thumbnail"/>
             </a>
             <p>{{ data.eleventyNavigation.excerpt }}</p>
         </article>
@@ -33,10 +34,12 @@ title: Main Page
     <div class="row">
         {#
         {{collections.all | eleventyNavigation | log   }}
-        #}
         {{article(collections.all | navigationKeyFilter("automata"))}}
-        {{article(collections.all | navigationKeyFilter("vrquiz"))}}
+        #}
 
+        {{collections.all | articleFilter("automata") | safe}}
+        {{collections.all | articleFilter("vrquiz") | safe}}
+        {{collections.all | articleFilter("website") | safe}}
         {#
         <article class="col-6 col-12-xsmall work-item">
             <a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt=""/></a>
@@ -61,9 +64,7 @@ title: Main Page
 
         <div class="col-8 col-12-small">
             <form method="post" action="#">
-
                 <div class="row gtr-uniform gtr-50">
-
                     <input type="hidden" name="access_key" value=process.env.WEBFORM>
                     <div class="col-6 col-12-xsmall">
                         <input type="text" name="name" id="name" placeholder="Name"/>
@@ -110,4 +111,3 @@ title: Main Page
         </div>
     </div>
 </section>
-<!-- Four -->

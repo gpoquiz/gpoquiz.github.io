@@ -1,7 +1,3 @@
----
-title: My Rad Blog
-background: /images/bg.jpg
----
 
 <!DOCTYPE html>
 <!-- Strata by HTML5 UP html5up.net | @ajlkn Free for personal and commercial use under the CCA 3.0 license
@@ -18,32 +14,22 @@ background: /images/bg.jpg
         <!--Your new content will be displayed in here-->
         <script id="header-template" type="text/x-handlebars-template"></script>
         <!-- Header -->
-        <header id="header" style="background-image: url(/assets/css/images/overlay.png), url({{background}}); ">
+        <header id="header">
             <div class="inner">
-                <a href="/" class="image avatar"><img src="/images/penrose small.png" alt=""/>
-                </a>
-
-                <div style="mix-blend-mode: difference;">
-                    <h1>
-                        <strong>Grant Poquiz</strong>
-                    </h1>
-                    <p>
-                        Software Developer
-                        <br/> 
-                        Supergiant Fan
-                        <br/>
-                        Brandon Sanderson Enjoyer
-                    </p>
-                </div>
+                <a href="/" class="image avatar"><img src="/images/penrose small.png" alt=""/> </a>
+                <h1>
+                    <strong>Grant Poquiz</strong>
+                </h1>
+                Software Developer <br/> Supergiant Fan <br/> Brandon Sanderson Enjoyer
             </div>
         </header>
         <!-- Main -->
         <div id="main">
-            {{content|safe}}
+            <ul><li><a href="/projects/unity/vrquiz/">vrquiz</a></li></ul>
         </div>
         <!-- Footer -->
         <footer id="footer">
-            <div class="inner" style="webkit-text-stroke-width: 1px;webkit-text-stroke-color: rgba(0, 0, 0, 1);">
+            <div class="inner">
                 <ul class="icons">
                     <li>
                         <a href="https://github.com/gpoquiz" class="icon brands fa-github">

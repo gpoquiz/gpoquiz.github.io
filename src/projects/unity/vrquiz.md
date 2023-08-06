@@ -1,12 +1,12 @@
 ---
 layout: defaultlayout.njk
 title: Google VR Quiz Game
+background: /images/backgrounds/vrquiz_bg.png
 eleventyNavigation:
   key: vrquiz
   parent: unity
-  thumbnail: ../vrquiz.png
+  thumbnail: /images/thumbs/vrquiz.png
   excerpt: A multiplayer quiz game for GoogleVR.
-  title: 
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y6JbmzztWYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

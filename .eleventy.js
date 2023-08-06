@@ -1,21 +1,28 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const filters = require('./src/_includes/filters.js');
+const shortcodes = require('./src/_includes/shortcodes.js')
 
-function passthroughCopies(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("projects");
+function configPassthroughCopies(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/old_website");
+  eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/projects");
+}
+function configFilters(eleventyConfig) {
+
+  eleventyConfig.addFilter("navigationKeyFilter", filters.navigationKeyFilter);
+  eleventyConfig.addFilter("articleFilter", filters.articleFilter);
+  eleventyConfig.addShortcode("article", shortcodes.article);
 }
 
 module.exports = function (eleventyConfig) {
-  passthroughCopies(eleventyConfig);
+  configPassthroughCopies(eleventyConfig);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.setNunjucksEnvironmentOptions({
     throwOnUndefined: true,
   });
   eleventyConfig.addGlobalData("env", process.env);
-
-  eleventyConfig.addFilter("navigationKeyFilter", filters.navigationKeyFilter);
+  configFilters(eleventyConfig);
 
   return {
     dir: {

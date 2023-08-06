@@ -5,9 +5,8 @@ title: Multidimensional Cellular Automata
 eleventyNavigation:
   key: automata
   parent: unreal
-  thumbnail: ../automata.png
+  thumbnail: /images/thumbs/automata.png
   excerpt: Generalized Multidimensional Cellular Automata in Unreal Engine.
-  title: Multidimensional Cellular Automata
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BIJmYiCgFao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
