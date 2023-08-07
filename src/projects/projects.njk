@@ -1,8 +1,11 @@
 ---
 layout: defaultlayout.njk
-eleventyNavigation:
-  key: projects
+key: projects
+parent: index
 ---
+
+        {#
+{{ collections.all | eleventyNavigation: "projects" | eleventyNavigationToHtml | articles | safe }}
 
 {% set navPages = collections.all | eleventyNavigation %}
 {% macro renderNavListItem(entry) -%}
@@ -42,3 +45,4 @@ eleventyNavigation:
     {{ renderNavListItem(entry) }}
   {%- endfor -%}
 </ul>
+#}

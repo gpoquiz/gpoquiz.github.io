@@ -1,7 +1,8 @@
 ---
 layout: defaultlayout.njk
 title: Main Page
-background: /images/backgrounds/index_bg.png
+key: index
+parent: index
 ---
 <!-- One -->
 <section id="one">
@@ -20,17 +21,6 @@ background: /images/backgrounds/index_bg.png
 <!-- Two -->
 <section id="two">
     <h2>Recent Work</h2>
-
-    {% macro article(data) -%}
-        <article class="col-6 col-12-xsmall work-item">
-            <h3>{{ data.title }}</h3>
-            <a href="{{ data.page.url }}">
-                <img src="{{ data.eleventyNavigation.thumbnail }}" alt="{{ data.title }}" class="image fit thumbnail"/>
-            </a>
-            <p>{{ data.eleventyNavigation.excerpt }}</p>
-        </article>
-    {%- endmacro %}
-
     <div class="row">
         {#
         {{collections.all | eleventyNavigation | log   }}
