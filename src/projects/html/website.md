@@ -1,13 +1,7 @@
 ---
 layout: defaultlayout.njk
 title: Website
-background: /images/backgrounds/website_bg.png
-eleventyNavigation:
-  key: website
-  parent: html
-  thumbnail: /images/thumbs/website.png
-  excerpt: Yes, this one.
-  title: Website
+excerpt: Yes, this one.
 ---
 
 # Reflecting on Building a Website with HTML5UP and 11ty Navigation

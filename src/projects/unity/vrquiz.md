@@ -2,9 +2,6 @@
 layout: defaultlayout.njk
 title: Google VR Quiz Game
 excerpt: A multiplayer quiz game for GoogleVR.
-
-key: vrquiz
-parent: unity
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y6JbmzztWYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
