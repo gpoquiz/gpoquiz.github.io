@@ -1,0 +1,48 @@
+---
+layout: defaultlayout.njk
+parent: index
+---
+
+{{ collections.all | navigationParentFilter("projects") | articleFilter | safe }}
+{#
+{{ collections.all | eleventyNavigation: "projects" | eleventyNavigationToHtml | articles | safe }}
+
+{% set navPages = collections.all | eleventyNavigation %}
+{% macro renderNavListItem(entry) -%}
+
+  <div class="row">
+    <article class="col-6 col-12-xsmall work-item">
+
+      {%- if entry.title -%}
+        <h3>{{ entry.title }}</h3>
+      {%- endif -%}
+      
+      <a href="{{ entry.url }}">
+        {%- if entry.thumbnail -%}
+          <img src="{{ entry.url }}{{ entry.thumbnail }}" alt="{{ entry.title }}" class="image fit thumbnail"/>
+        {% else %}
+          {{ entry.title }}
+        {%- endif -%}
+      </a>
+      
+      {%- if entry.excerpt -%}
+        <p>{{ entry.excerpt }}</p>
+      {%- endif -%}
+      
+      {%- if entry.children.length -%}
+        <ul>
+          {%- for child in entry.children %}
+            {{ renderNavListItem(child) }}
+          {% endfor -%}
+        </ul>
+      {%- endif -%}
+    </article>
+  </div>
+{%- endmacro %}
+
+<ul>
+  {%- for entry in navPages %}
+    {{ renderNavListItem(entry) }}
+  {%- endfor -%}
+</ul>
+#}

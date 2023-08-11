@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from gpoquiz.me/projects/VRQuiz by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Aug 2023 22:11:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Google VR Quiz Game</title>
+    
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+  
+  </head>
+
+
+  <body>  <nav>
+	<ul> 
+	
+		<li><a  <a href="../index.html" >Home</a>
+		</a></li>
+	
+		<li><a  <a href="../about/index.html" >About</a>
+		</a></li>
+	
+		<li><a  <a href="../environments/index.html" >Projects</a>
+		</a></li>
+	
+		<li><a  <a href="../resume/index.html" >Resume</a>
+		</a></li>
+	
+	</ul>
+</nav>
+<div class="container">
+
+  <div class="project">
+<h1>Google VR Quiz Game</h1>
+	
+	<ul class="posts">
+							<div style = "float: left; width: 90%">
+							<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Y6JbmzztWYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>This project was a a group project done for my graduate degree.  We wanted to pick a project that would be interesting, but not taxing in terms of required man hours.  To start, we decided that a simple VR quiz game, where you look at the answers to select them, would be an easy enough introduction to Unity.  Our professor encouraged the class to make their project at least somewhat Covid-19 related, and so we tacked on a multiplayer component.  The intent was to mimic Kahoot stlye quizzes (essentially classroom competitive quizzes.)  Our professor also required more usage of the 3D space that the game occupied, which I will go into later.</p>
+
+<p>Our group’s first step was to research the mutliplayer options we had for Unity.  The major positives for us were free development testing (up to 20 concurrent users), innate crossplatform implementations, (which means we could debug the mobile deployments better, as well as make no changes between our android versions and the Unity editor,) and the advertised ease of implementation.</p>
+
+<p>My groupmates and I started off with the <a href="https://doc.photonengine.com/en-us/pun/v2/demos-and-tutorials/pun-basics-tutorial/intro">photon tutorial</a>, which was instructive, but far from comprehensive.  The first few parts of the tutorial also went over some Unity basics, which the course failed to provide.  This tutorial was helpful, but failed to mention features like RPC’s (functions that you can call across clients) that the documentation describes as a feature that “sets PUN aside from other Photon packages.”  Part of this frustration may also be my general lack of knowledge regarding networking.  Regardless, the package was fun to work with, and provided an easy implementation of networking (although I have no alternatives to compare to.)</p>
+
+<p>For our kahoot <del>ripoff</del> inspired game, I wanted there to be some sort of additional challenge to the quizzes.  So, instead of just clicking on the answer, I wanted the answer choices to revolve around the quiz.  It’s not a significant change, but it meant that I could have fun with the models, textures, and motion of the answers.  At first I had the models revolve in a circle around the quiz (on the same plane as the quiz), but the space the answers took in relation to the quiz was too much in my opinion.  So I changed the movement path to a rectangle around the quiz instead.  I also made the selected answer choice rotate on its own axis while it revolved around the quiz, as a nice effect.</p>
+
+</p>
+							</div>
+							<div style = "float: right; width: 10%; height: 100%;">
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									<a target="_blank" href="../assets/images/vrquiz/3gkN3oC.png">
+										<img src="../assets/images/vrquiz/3gkN3oC.png">
+									</a>
+								
+							
+								
+									<a target="_blank" href="../assets/images/vrquiz/45cf3826-1089-4b35-b897-2d444b700081.jpg">
+										<img src="../assets/images/vrquiz/45cf3826-1089-4b35-b897-2d444b700081.jpg">
+									</a>
+								
+							
+								
+									<a target="_blank" href="../assets/images/vrquiz/68a7a367-dc48-4636-9a5d-ee007a0c5b73.jpg">
+										<img src="../assets/images/vrquiz/68a7a367-dc48-4636-9a5d-ee007a0c5b73.jpg">
+									</a>
+								
+							
+								
+									<a target="_blank" href="../assets/images/vrquiz/f024ddab-01c0-4e6f-8b20-1e4a9cc3edd8.jpg">
+										<img src="../assets/images/vrquiz/f024ddab-01c0-4e6f-8b20-1e4a9cc3edd8.jpg">
+									</a>
+								
+							
+								
+									<a target="_blank" href="../assets/images/vrquiz/nGrByFQ.png">
+										<img src="../assets/images/vrquiz/nGrByFQ.png">
+									</a>
+								
+							
+								
+							
+							</div>
+
+	</ul>
+</div>
+
+</div>
+  </body>
+ 
+  <footer>
+
+   <ul>
+   <li><a href="mailto:gpoquiz@gmail.com">email</a></li>
+   <li><a href="https://github.com/gpoquiz">github.com/gpoquiz</a></li>
+   </ul>
+  </footer>
+
+<!-- Mirrored from gpoquiz.me/projects/VRQuiz by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Aug 2023 22:11:37 GMT -->
+</html>
