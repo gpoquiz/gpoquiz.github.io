@@ -1,4 +1,5 @@
 ---
+title: Unreal
 layout: defaultlayout.njk
 ---
-{{ collections.all | eleventyNavigation: "unreal" | eleventyNavigationToHtml }}
+{{ collections.all | navigationParentFilter:page.fileSlug | articleFilter }}

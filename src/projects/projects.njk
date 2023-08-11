@@ -1,8 +1,10 @@
 ---
 layout: defaultlayout.njk
+parent: index
 ---
 
-        {#
+{{ collections.all | navigationParentFilter("projects") | articleFilter | safe }}
+{#
 {{ collections.all | eleventyNavigation: "projects" | eleventyNavigationToHtml | articles | safe }}
 
 {% set navPages = collections.all | eleventyNavigation %}

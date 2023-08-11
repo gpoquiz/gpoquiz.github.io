@@ -1,4 +1,5 @@
 ---
+title: Unity
 layout: defaultlayout.njk
 ---
-{{ collections.all | eleventyNavigation: "unity" | eleventyNavigationToHtml }}
+{{ collections.all | navigationParentFilter:page.fileSlug | articleFilter }}

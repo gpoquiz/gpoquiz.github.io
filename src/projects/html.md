@@ -1,4 +1,5 @@
 ---
+tite: HTML
 layout: defaultlayout.njk
 ---
-{{ collections.all | eleventyNavigation: "html" | eleventyNavigationToHtml }}
+{{ collections.all | navigationParentFilter:page.fileSlug | articleFilter }}

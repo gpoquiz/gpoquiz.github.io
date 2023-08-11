@@ -12,6 +12,7 @@ function configFilters(eleventyConfig) {
 
   eleventyConfig.addFilter("navigationKeyFilter", filters.navigationKeyFilter);
   eleventyConfig.addFilter("articleFilter", filters.articleFilter);
+  eleventyConfig.addFilter("navigationParentFilter", filters.navigationParentFilter);
 }
 
 module.exports = function (eleventyConfig) {
