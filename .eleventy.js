@@ -28,6 +28,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       // ⚠️ These values are both relative to your input directory.
       input:"src",
+      output:"_site",
       layouts: "_layouts",
     },
   };
