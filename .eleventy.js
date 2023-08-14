@@ -1,6 +1,7 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const filters = require('./src/_includes/filters.js');
 const shortcodes = require('./src/_includes/shortcodes.js')
+require('dotenv').config();
 
 function configPassthroughCopies(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
