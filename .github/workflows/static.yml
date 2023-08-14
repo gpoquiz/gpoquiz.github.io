@@ -39,6 +39,8 @@ jobs:
         run: |
           npm install
           npm run build
+        env:
+          WEBFORM: ${{ secrets.WEBFORM }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
