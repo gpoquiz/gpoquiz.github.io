@@ -42,7 +42,8 @@ This website was a remake of my old website, which you can find [here](http://lo
 Remade with [11ty](https://www.11ty.dev/), [11ty Navigation](https://www.11ty.dev/docs/plugins/navigation/), 
 
 
-Old Website
+## Old Website
+
 This website was made primarily as a resume material, secondarily
 to learn HTML/CSS.
 
