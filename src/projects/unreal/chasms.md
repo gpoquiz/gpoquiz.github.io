@@ -1,11 +1,15 @@
 ---
 layout: defaultlayout.njk
-title: Stormlight Archive Procedural Chasm Landscape Generation
+title: Procedural Chasm Landscape Generation
 excerpt: Procedurally generating chasms based on The Stormlight Archive
 ---
 <!---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BIJmYiCgFao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 -->
+
+<style>
+img{width: 100%;}
+</style>
 
 The intent of this project was to 
 1. Get more experience in UE5
@@ -13,8 +17,9 @@ The intent of this project was to
 3. Do something cool
 
 [The Stormlight Archive](https://www.brandonsanderson.com/the-stormlight-archive-series/) is a high fantasy series.  The primary setting of the first book is a barren landscape of crevasses and plateaus 
-![Fanart by exmakina](https://static.wikia.nocookie.net/stormlightarchive/images/c/c8/Plains_exm.png/revision/latest?cb=20140807041616)
-![Map from the book](https://static.wikia.nocookie.net/stormlightarchive/images/2/2a/Shattered_Plains.jpg/revision/latest/scale-to-width-down/1000?cb=20121114150205)
+
+![Fanart by exmakina](https://i.imgur.com/qIhI99t.png)
+![Map from the book](https://i.imgur.com/JxVIZ9i.jpeg)
 
 
 I wanted to find a way to mimic this landscape.  It would be my first foray into generating an open world, and I hoped to utilize the new Unreal Engine features: Nanite and World Partition.

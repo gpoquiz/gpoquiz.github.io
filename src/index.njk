@@ -28,6 +28,7 @@ title: Main Page
         {{article(collections.all | navigationKeyFilter("automata"))}}
         #}
 
+        {{collections.all | articleFilter("chasms") | safe}}
         {{collections.all | articleFilter("automata") | safe}}
         {{collections.all | articleFilter("vrquiz") | safe}}
         {{collections.all | articleFilter("website") | safe}}
