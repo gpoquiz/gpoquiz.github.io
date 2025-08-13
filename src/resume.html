@@ -3,139 +3,168 @@ layout: defaultlayout.njk
 title: Resume
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Poquiz - Resume</title>
+    
 </head>
 <body>
-  <header>
-    <h1>Grant Poquiz | gpoquiz.me</h1>
-  </header>
+    <header>
+        <h1>Grant Poquiz | <a href="https://gpoquiz.me" target="_blank">gpoquiz.me</a></h1>
+    </header>
 
-  <section>
-    <h2>Contact Information:</h2>
-    <p>Phone: (817) 308-7360</p>
-    <p>Email: dev@gpoquiz.me</p>
-  </section>
+    <section>
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p>Phone: (817) 308-7360</p>
+            <p>Email: <a href="mailto:dev@gpoquiz.me">dev@gpoquiz.me</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/grant-poquiz/" target="_blank">linkedin.com/in/grant-poquiz/</a></p>
+        </div>
+    </section>
 
-  <section>
-    <h2>Education</h2>
-    <div>
-      <h3>UTD</h3>
-      <p><strong>Bachelor of Science in Computer Science</strong></p>
-      <p><em>May 2020</em></p>
-      <ul>
-        <li>3 Year Degree</li>
-        <li>Worked as a CS tutor</li>
-      </ul>
-    </div>
-    <div>
-      <p><strong>Master of Science in Computer Science and Interactive Computing</strong></p>
-      <p><em>May 2021</em></p>
-      <ul>
-        <li>1 Year Fast Track Degree</li>
-        <li>Computational Geometry</li>
-        <li>Machine Learning</li>
-        <li>Virtual Reality</li>
-        <li>Computer Graphics</li>
-        <li>Human-Computer Interactions</li>
-      </ul>
-    </div>
-  </section>
+    <section>
+        <h2>Experience</h2>
+        
+        <div class="job-entry">
+            <h3>Software Developer II - Clarity SML RFID</h3>
+            <em>November 2023 – Current</em>
+            <ul>
+                <li>Item-level inventorying with RFID technology for increased accuracy and speed.</li>
+                <li>MVVM Dependency Injected Android App, Svelte Web App, C# API backend, Azure DevOps Deployment, SQLServer Repository, Atlassian Suite (Jira)</li>
+                <li>Optimized an endpoint from 20 minutes to 45 seconds within one week of starting.</li>
+                <li>Personalized changes for large clients: H&M, Tesco, Nike, Academy, Altar'd State, and more.</li>
+                <li>Worked with 4 devs to upgrade 250+ pages and controls to .NET9 and Maui.</li>
+                <li>Generated, parsed, and analyzed RFID read data with custom strength algorithms.</li>
+            </ul>
+        </div>
 
-  <section>
-    <h2>Experience</h2>
-    <div>
-      <h3>Software Contractor - VistraCorp Via SharpEcho</h3>
-      <p><em>May 2022 – Present</em></p>
-      <ul>
-        <li>DevOps and Web development work for the Ambit Energy team.</li>
-        <li>Consultant Marketing Portals, Client Management, Client Enrollment, etc.</li>
-        <li>C# Fabric/ASP.NET Backend, SQL Server Database Management, Vue.js and Angular front end.</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Software Developer II - Paycom</h3>
-      <p><em>February 2022 – May 2022</em></p>
-      <ul>
-        <li>C# .NET development working with Paycom's Year End Utility.</li>
-        <li>Generation and management of W2's, 1099's, and other tax forms.</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Software Developer II - Paycom</h3>
-      <p><em>June 2021 - January 2022</em></p>
-      <ul>
-        <li>Full stack development working with Paycom's largest module: Payroll.</li>
-        <li>PHP backend work, Javascript frontend, and mySQL/FoxPro database management.</li>
-      </ul>
-    </div>
-  </section>
+        <div class="job-entry">
+            <h3>Software Contractor - Ambit Energy SharpEcho</h3>
+            <em>May 2022 – September 2023</em>
+            <ul>
+                <li>DevOps and Web development work for the Ambit Energy team at VistraCorp.</li>
+                <li>Consultant Marketing Portals, Client Management, Client Enrollment, etc.</li>
+                <li>C# Fabric/ASP.NET Micro-Services Backend, SQL Server Database Management, Vue.js and Angular front end.</li>
+            </ul>
+        </div>
 
-  <section>
-    <h2>Projects</h2>
+        <div class="job-entry">
+            <h3>Software Developer II - Paycom</h3>
+            <em>June 2021 – May 2022</em>
+            <ul>
+                <li>Full stack development working with Paycom's largest module: Payroll.</li>
+                <li>PHP backend, Javascript frontend, and mySQL/FoxPro database management for high profile clients such as Amazon, The New England Patriots, and Planet Fitness</li>
+                <li>Generation and management of W2's, 1099's, and other tax forms with C# .NET</li>
+            </ul>
+        </div>
+    </section>
 
+    <section>
+        <h2>Education</h2>
+        
+        <div class="education-entry">
+            <h3>University of Texas at Dallas</h3>
+            <p><strong>Master of Science in Computer Science and Interactive Computing</strong></p>
+            <em>May 2021</em>
+            <ul>
+                <li>1 Year Fast Track Degree</li>
+                <li>Computational Geometry</li>
+                <li>Machine Learning</li>
+                <li>Virtual Reality</li>
+                <li>Computer Graphics</li>
+                <li>Human-Computer Interactions</li>
+            </ul>
+        </div>
 
-    <div>
-      <h3>Universal Exception Queue - C#, Vue, SQLServer</h3>
-      <p>Converting a case system into an exception queue by adding hashing, duplicate prevention, and indexing.</p>
+        <div class="education-entry">
+            <h3>University of Texas at Dallas</h3>
+            <p><strong>Bachelor of Science in Computer Science</strong></p>
+            <em>May 2020</em>
+            <ul>
+                <li>3 Year Degree</li>
+                <li>Worked as a CS tutor</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project-entry">
+            <h3>Collapsi AI - C++</h3>
+            <p>Created a Multi-Threaded C++ solver and analyzer for a card game: Collapsi by Mark Ball. Calculates 52,000,000 end states over 10,000 games. 3400 states/ms, 1.5ms/game</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Digital Collapsi - C++, GDScript, GDExtension, Godot Game Engine</h3>
+            <p>Developed a digital version of Collapsi using Godot. Custom Spriting, Foley/Sound Effects, and Code. Ported the C++ solver as a GDExtension to utilize it as an AI opponent. <a href="https://gpoquiz.itch.io/collapsi" target="_blank">Play online or download for free</a></p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Dutchman's Delve - C#, Unity</h3>
+            <p>Designed, developed, and polished a physics based platformer with a partner for Brackey's One Week Game Jam. <a href="https://anemonestudio.itch.io/dutchmans-delve" target="_blank">Download for free</a></p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Universal Exception Queue - C#, Vue, SQLServer</h3>
+            <p>Transformed an existing Ambit case system into a high-performance Universal Exception Queue. Implemented hashing for unique case identification, reduced duplicate cases, and optimized indexing for faster query responses.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Ambit Payment Extensions - C#, Angular, SQLServer</h3>
+            <p>Interteam project for seamlessly extending a payment processing system for agents.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Automated SUTA Rate Updates - PHP, MySQL, RabbitMQ, Orchestrators</h3>
+            <p>Leveraged PHP, MySQL, RabbitMQ, and Orchestrator Architecture to streamline notifying clients about updated tax rates.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Payroll Late Submission Reminders - PHP, MySQL</h3>
+            <p>Made custom PHP pages and MySQL databases to create and manage reminders of late payroll submissions.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Unreal Chasm Generation - C++, Unreal, Nanite, Megascans, SFML</h3>
+            <p>Generated Voronoi Diagrams to create chasmous landscapes. Converted the Voronoi Diagrams into splines with high-definition megascans and intelligent modifications to create procedural geometry.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Multidimensional Cellular Automata - C++, Unreal</h3>
+            <p>Simulated cellular automata (games of life) in generalized dimensions with Unreal Engine.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>CUDA Cellular Automata - C++, CUDA, SDL</h3>
+            <p>Optimized the generation of N'th dimensional cellular automata with CUDA.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Virtual Reality Quiz - C#, Unity Game Engine, Photon Multiplayer, GoogleVR</h3>
+            <p>Created online multiple choice and geo-guesser style multiplayer quizzes. Implemented a Peer-to-Peer Host-Client architecture using Remote Procedure Calls.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>VR Gravity Manipulation - C#, Unity Game Engine, Virtual Reality</h3>
+            <p>Devised a system of locomotion in virtual reality where players would point to manipulate their direction of gravity.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>VR Double Vision - C++, Unreal Blueprints, OpenXR</h3>
+            <p>Manipulated materials in Unreal Engine 5 to make specific objects only visible to one eye, mimicking an anaglyph image.</p>
+        </div>
+
+        <div class="project-entry">
+            <h3>Signal Analysis - C++, PortAudio, Audio Analysis</h3>
+            <p>Analyzed microphone input with the low-level PortAudio library in order to isolate tone for mimicking rock-band style gameplay.</p>
+        </div>
+    </section>
+
+    <div class="download-link">
+        <a href="#" download="Grant_Poquiz_Resume.pdf">Download PDF</a>
     </div>
-
-    <div>
-      <h3>Ambit Payment Extensions - C#, Angular, SQLServer</h3>
-      <p>Added UI features to allow agents to process payment extensions through an inter-team hosted page.</p>
-    </div>
-
-    <div>
-      <h3>AWS Image Rekognition Framework - Python (boto3 API), NoSQL, CloudFormation</h3>
-      <p>Worked with a team to provide cloud formation scripts for setting up AWS Rekognition services.</p>
-    </div>
-
-    <div>
-      <h3>Automated SUTA Rate Updates - PHP, MySQL, RabbitMQ, Orchestrators</h3>
-      <p>Paycom Project for automating clients' state unemployment rate Updates.</p>
-    </div>
-
-    <div>
-      <h3>Payroll Late Submission Reminders - PHP, MySQL</h3>
-      <p>Paycom Project for reminders of upcoming or missed payrolls.</p>
-    </div>
-
-    <div>
-      <h3>Multidimensional Cellular Automata - C++, Unreal Engine 4</h3>
-      <p>An Unreal Engine Project for making cellular automata (games of life) in generalized dimensions.</p>
-    </div>
-
-    <div>
-      <h3>Virtual Reality Quiz - C#, Unity Game Engine, Photon Multiplayer</h3>
-      <p>Worked with a team to create quizzes for VR. One multiple choice style, one Geoguesser style.</p>
-    </div>
-
-    <div>
-      <h3>Mobile "Pop the Balloons" Game - Java, Android Studio</h3>
-      <p>A game with a scoring system and collision detection. Made with Android Studio for mobile devices.</p>
-    </div>
-
-    <div>
-      <h3>VR Gravity Manipulation - Unity, C#, Virtual Reality</h3>
-      <p>Experiments in Virtual Reality for locomotion via manipulating player gravity.</p>
-    </div>
-
-    <div>
-      <h3>VR Double Vision - Unreal Blueprints, C++, OpenXR</h3>
-      <p>Experiments in Virtual Reality where objects are only visible to one eye.</p>
-    </div>
-
-    <div>
-      <h3>Port Audio - C++, PortAudio</h3>
-      <p>Experiments in Port Audio Library for low level analysis of microphone inputs.</p>
-    </div>
-
-    <div>
-      <h3>Skiplagged API - Node, Javascript</h3>
-      <p>Querying flight APIs with generalized sources and destinations.</p>
-    </div>
-  </section>
-  <a href = "/assets/downloadable/resume.pdf" download = "Grant_Poquiz_Resume.pdf">Download</a>
 </body>
 </html>
